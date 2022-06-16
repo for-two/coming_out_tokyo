@@ -1,0 +1,19 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="RailsChecklist01" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="RailsChecklist02" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="Rubocop" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RubyCaseWithoutElseBlockInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="RubyDuplicatedKeysInHashInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="RubyLiteralArrayInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="RubyQuotedStringsInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="RubyStringKeysInHashInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="RubyThenInMultilineConditionalInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="RubyUnlessWithElseInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="RubyUnnecessaryReturnStatement" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="RubyUnnecessaryReturnValue" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="RubyUnnecessarySemicolon" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="RubyUnusedLocalVariable" enabled="true" level="ERROR" enabled_by_default="true" />
+  </profile>
+</component>

@@ -1,0 +1,702 @@
+/*====================================全体====================================*/
+body {
+  margin: 0;
+  background-color: #101010;
+  color: white;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.more {
+  width: 80%;
+  text-align: right;
+  margin: 50px auto 0;
+}
+
+/*====================================ヘッダー====================================*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 1.5rem auto 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.search-icon {
+  color: white;
+  font-size: 24px;
+}
+
+.menu-icon {
+  color: white;
+  font-size: 24px;
+}
+
+/*====================================ピックアップエリア====================================*/
+
+.pick-up-area {
+  background-color: #252525;
+  padding-bottom: 30px;
+}
+
+.pick-up-title-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pick-up-title {
+  margin: -15px 80px 0;
+  width: 20%;
+}
+.pick-up-title img {
+  width: 100%;
+}
+
+.pick-up-left-line {
+  margin-top: -15px;
+  width: 15%;
+}
+
+.pick-up-right-line {
+  margin-top: -15px;
+  width: 65%;
+}
+
+.pick-up-article {
+  margin: 0 auto;
+  position: relative;
+}
+
+.pick-up-article img {
+  width: 80%;
+  height: 470px;
+  margin: 0 auto;
+}
+
+.pick-up-article-title {
+  width: 80%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: linear-gradient(transparent, #252525 50%);
+}
+.pick-up-article-tag {
+  margin: 15px;
+  padding: 3px 45px;
+  width: fit-content;
+  background-color: white;
+  color: #FF5454;
+  font-family: 'Noto Sans CJK JP';
+  font-weight: bold;
+  border-radius: 3px;
+}
+.pick-up-article-text {
+  margin: 15px;
+  font-family: 'Noto Sans CJK JP';
+  font-weight: bold;
+  font-size: 23px;
+}
+
+/*====================================アバウトエリア====================================*/
+.top-video {
+  width: 100%;
+}
+.top-video video {
+  width: 100%;
+}
+
+.about-text-area {
+  margin-top: -60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.about-text-contents {
+  width: 80%;
+  padding: 20px 0 40px;
+}
+
+.about-logo-description {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.about-logo {
+  width: 35%;
+  margin: 0 auto;
+}
+.about-logo img {
+  width: 100%;
+}
+.about-title {
+  width: 40%;
+  margin: 50px auto 0;
+}
+.about-title img {
+  width: 100%;
+}
+
+.about-text {
+  margin-top: -48px;
+}
+
+.about-text-left-line {
+  background-color: #FEFF50;
+  width:2px;
+}
+
+.about-text-right-line {
+  background-color: #E393FF;
+  width:2px;
+}
+
+/*====================================コンテンツエリア====================================*/
+.contents {
+  display: flex;
+  margin: 100px 0;
+}
+
+.contents-card {
+  width: 100%;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.contents-card-small {
+  width: 49%;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.contents-img {
+  width: 100%;
+  border-radius: 3px
+}
+
+.large-contents-img {
+  height: 430px;
+}
+
+.small-contents-img {
+  height: 230px;
+}
+
+.contents-title {
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contents-date {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.contents-tag-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contents-tag {
+  font-size: 12px;
+  padding: 3px 25px;
+  border: 2px solid;
+  border-radius: 3px;
+  margin: 5px 5px 5px 0;
+}
+
+.left-contents {
+  width: 75%;
+}
+
+.right-contents {
+  background-color: #252525;
+  width: 25%;
+  height: fit-content;
+}
+
+/*====================================リコメンドエリア====================================*/
+.recommend-color {
+  color: #E393FF;
+}
+
+.recommend-area {
+  text-align: center;
+}
+
+.recommend-title {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.recommend-img {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.recommend-title-text {
+  color: #E393FF;
+  width: fit-content;
+  margin: -25px auto;
+  font-size: 24px;
+  border: 2px solid #E393FF;
+  padding: 12px 20px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.recommend-text {
+  font-size: 18px;
+  margin: 70px 0 50px;
+}
+
+.recommend-large {
+  width: 68%;
+  margin: 0 auto;
+}
+
+.recommend-small {
+  width: 68%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recommend-more-img {
+  width: 22%;
+}
+
+/*====================================ラブエリア====================================*/
+.love-color {
+  color: #FF5454;
+}
+
+.love-area {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.love-title {
+  width: 68%;
+  margin: 0 auto;
+}
+
+.love-img {
+  width: 50%;
+  opacity: 0.5;
+}
+
+.love-title-text {
+  color: #FF5454;
+  width: fit-content;
+  margin: -25px auto;
+  font-size: 24px;
+  border: 2px solid #FF5454;
+  padding: 12px 20px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.love-text {
+  font-size: 18px;
+  margin: 70px 0 50px;
+}
+
+.love-large {
+  width: 68%;
+  margin: 0 auto;
+}
+
+.love-small {
+  width: 68%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.love-more-img {
+  width: 22%;
+}
+
+/*====================================ライターエリア====================================*/
+.writer-color {
+  color: #88D4FF;
+}
+
+.writer-area {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.writer-title {
+  width: 38%;
+  margin: 0 auto;
+}
+
+.writer-title-img {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.writer-title-text {
+  width: fit-content;
+  margin: -25px auto;
+  font-size: 24px;
+  border: 2px solid;
+  padding: 12px 20px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.writer-text {
+  font-size: 18px;
+  margin: 70px 0 50px;
+}
+
+.writer-contents-area {
+  width: 80%;
+  margin: 20px auto 100px;
+}
+
+.writer-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.writer-img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.writer-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.writer-name {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.writer-follower {
+  color: #88D4FF;
+  width: fit-content;
+  padding: 5px 25px;
+  border: 1px solid;
+  border-radius: 3px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.writer-description {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.writer-sns-logo {
+  background-color: #88D4FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.writer-sns-logo i {
+  color: black;
+  font-size: 30px;
+}
+
+.writer-more-img {
+  width: 22%;
+}
+
+/*====================================ジャンルエリア====================================*/
+.genre-articles-area {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.genre-items {
+  color: #FEFF50;
+  font-size: 18px;
+  width: 80%;
+  margin: 30px auto 50px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid;
+  padding-bottom: 15px;
+}
+
+.active-genre {
+  border-bottom: 2px solid;
+}
+
+.genre-item {
+  padding-bottom: 8px;
+}
+
+.genre-color {
+  color: #FEFF50;
+}
+
+.genre-large {
+  width: 68%;
+  margin: 0 auto;
+}
+
+.genre-small {
+  width: 68%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-nate-area {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  align-items: center;
+  margin: 40px 0 25px;
+}
+
+.prev-page-nate, .next-page-nate {
+  height: 10px;
+  width: 12px;
+  line-height: 10px;
+  padding: 10px;
+  border: 2px solid #FEFF50;
+  border-radius: 50%;
+  margin: 0 30px;
+}
+
+.page-number {
+  margin: 0 15px;
+  height: 12px;
+  width: 12px;
+  line-height: 12px;
+  padding: 10px;
+}
+
+.active-page-number {
+  border: 2px solid #FEFF50;
+  border-radius: 50%;
+}
+
+/*====================================タグエリア====================================*/
+.tag-area {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.tag{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 3px;
+  margin-bottom: 35px;
+}
+
+.love-tag-img {
+  background: url(./images/red-tag.png) no-repeat center center / cover;
+}
+
+.adult-tag-img {
+  background: url(./images/purple-tag.png) no-repeat center center / cover;
+}
+
+.papakatsu-tag-img {
+  background: url(./images/blue-tag.png) no-repeat center center / cover;
+}
+
+.encounter-tag-img {
+  background: url(./images/yellow-tag.png) no-repeat center center / cover;
+}
+
+.concafe-tag-img {
+  background: url(./images/green-tag.png) no-repeat center center / cover;
+}
+
+/*====================================ランキングエリア====================================*/
+.ranking-area {
+  text-align: center;
+  margin: -20px auto 0;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #FF9345;
+}
+
+.ranking-area-sp {
+  display: none;
+}
+
+.ranking-title {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ranking-img {
+  width: 80%;
+  opacity: 0.5;
+}
+
+.ranking-title-text {
+  width: fit-content;
+  margin: -20px auto;
+  border: 2px solid #FF9345;
+  padding: 5px 40px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.ranking-color {
+  color: #FF9345;
+}
+
+.ranking-text {
+  font-size: 18px;
+  margin: 45px 0;
+}
+
+.ranking-card {
+  width: 80%;
+  margin: 0 auto 40px;
+  text-align: left;
+}
+
+.ranking-number-area {
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+}
+
+.ranking-number {
+  font-size: 50px;
+  width: fit-content;
+}
+
+.ranking-line {
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 10px;
+}
+
+.ranking-line hr {
+  width: 100%;
+  margin: 4px 0;
+}
+
+.ranking-contents-img {
+  width: 100%;
+  height: 180px;
+  border-radius: 3px;
+}
+
+.ranking-tag {
+  width: fit-content;
+  font-size: 13px;
+  background-color: white;
+  color: #E393FF;
+  border-radius: 3px;
+  padding: 3px 30px;
+}
+
+.ranking-contents-title {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.ranking-contents-date {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.ranking-more-img {
+  width: 40%;
+}
+/*====================================フッターエリア====================================*/
+.footer-site-map {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer-site-map-sp {
+  display: none;
+}
+
+.footer-left {
+  display: flex;
+}
+
+.footer-right {
+  display: flex;
+}
+
+.footer-twitter {
+  text-align: center;
+  margin-right: 50px;
+}
+
+.footer-twitter i {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  width: 80%;
+}
+
+.footer-logo img {
+  width: 100%;
+}
+
+.footer-twitter-text {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.site-info-text {
+  margin: 0 25px;
+}
+
+.copyright {
+  text-align: center;
+  margin: 80px 0 40px;
+  font-size: 13px;
+}

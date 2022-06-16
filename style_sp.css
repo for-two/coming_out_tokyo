@@ -1,0 +1,275 @@
+@media screen and (max-width: 768px) {
+  /*====================================全体====================================*/
+
+  .more {
+    width: 90%;
+  }
+
+  .separator {
+    width: 90%;
+  }
+  /*====================================ピックアップエリア====================================*/
+  .pick-up-article {
+    height: 350px;
+  }
+
+  .pick-up-article img {
+    width: 90%;
+  }
+
+  .pick-up-article-title {
+    width: 90%;
+  }
+
+  .pick-up-title {
+    margin: -15px 25px 0;
+    width: 50%;
+  }
+
+  .pick-up-article-tag {
+    padding: 3px 15px;
+  }
+
+  .pick-up-article-text {
+    font-size: 16px;
+  }
+
+  .pick-up-left-line {
+    width: 25%;
+  }
+
+  .pick-up-right-line {
+    width: 25%;
+  }
+
+  /*====================================アバウトエリア====================================*/
+  .about-logo-description {
+    font-size: 12px;
+  }
+
+  .about-logo {
+    width: 70%;
+  }
+
+  .about-title {
+    width: 85%;
+    margin: 30px auto 0;
+  }
+
+  .about-text {
+    margin-top: -35px;
+  }
+
+  /*====================================コンテンツエリア====================================*/
+  .contents {
+    display: block;
+    margin: 70px 0;
+  }
+
+  .large-contents-img {
+    height: 300px;
+  }
+
+  .small-contents-img {
+    height: 150px;
+  }
+
+  .contents-title {
+    font-size: 16px;
+  }
+
+  .contents-date {
+    font-size: 14px;
+  }
+
+  .left-contents {
+    width: 100%;
+  }
+
+  .right-contents {
+    display: none;
+  }
+
+  /*====================================リコメンドエリア====================================*/
+  .recommend-title {
+    width: 90%;
+  }
+
+  .recommend-large {
+    width: 90%;
+  }
+
+  .recommend-small {
+    width: 90%;
+  }
+
+  .recommend-more-img {
+    width: 40%;
+  }
+
+  /*====================================ラブエリア====================================*/
+  .love-title {
+    width: 90%;
+  }
+
+  .love-large {
+    width: 90%;
+  }
+
+  .love-small {
+    width: 90%;
+  }
+
+  .love-more-img {
+    width: 40%;
+  }
+
+  /*====================================ランキングエリア====================================*/
+  .ranking-area-sp {
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #252525;
+  }
+
+  .ranking-title-sp {
+    width: 90%;
+    margin: -30px auto 0;
+  }
+
+  .ranking-img-sp {
+    width: 85%;
+    opacity: 0.5;
+    margin-top: -25px;
+  }
+
+  .ranking-title-text-sp {
+    color: #FF9345;
+    width: fit-content;
+    margin: -25px auto;
+    font-size: 24px;
+    border: 2px solid #FF9345;
+    padding: 12px 20px;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+
+  .ranking-text-sp {
+    font-size: 18px;
+    margin: 70px 0 50px;
+  }
+
+  .ranking-content-sp {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .ranking-number-area-sp {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .ranking-number-left-line-sp, .ranking-number-right-line-sp {
+    width: 35%;
+    margin-bottom: 10px;
+  }
+
+  .ranking-number-sp {
+    width: 30%;
+    font-size: 60px;
+    color: #FF9345;
+    font-weight: bold;
+  }
+
+  .ranking-number-unit-sp {
+    font-size: 40px;
+  }
+
+  .ranking-content-tag-sp {
+    width: fit-content;
+    font-size: 13px;
+    background-color: white;
+    color: #E393FF;
+    border-radius: 3px;
+    padding: 3px 30px;
+  }
+
+  .ranking-more-img-sp {
+    width: 40%;
+  }
+
+  /*====================================ライターエリア====================================*/
+  .writer-title {
+    width: 90%;
+  }
+
+  .writer-more-img {
+    width: 40%;
+  }
+
+  .writer-title-img {
+    width: 80%;
+  }
+
+  /*====================================ジャンルエリア====================================*/
+  .genre-items {
+    width: 90%;
+  }
+
+  .genre-item {
+    font-size: 15px;
+  }
+
+  .genre-large {
+    width: 90%;
+  }
+
+  .genre-small {
+    width: 90%;
+  }
+
+  .page-nate-area {
+    width: 90%;
+    margin: 40px auto 20px;
+  }
+
+  .prev-page-nate, .next-page-nate {
+    margin: 0 10px;
+  }
+
+  .page-number {
+    margin: 0 7px;
+  }
+
+  /*====================================フッターエリア====================================*/
+  .footer-site-map {
+    display: none;
+  }
+
+  .footer-site-map-sp {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+
+  .footer-twitter {
+    margin: 0 0 20px 0;
+  }
+
+  .site-info-text {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+
+  .copyright {
+    margin: 30px 0;
+  }
+}
