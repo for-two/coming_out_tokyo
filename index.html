@@ -15,11 +15,49 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
+
 <header>
-  <i class="fa-solid fa-magnifying-glass search-icon"></i>
+  <i class="fa-solid fa-magnifying-glass search-icon search-trigger"></i>
   <img src="images/logo.png" alt="logo">
-  <i class="fa-solid fa-bars menu-icon"></i>
+  <i class="fa-solid fa-bars menu-icon menu-trigger"></i>
 </header>
+
+<nav class="menu-nav">
+  <p class="menu-nav-title">カテゴリー</p>
+  <div class="menu-tag-area">
+    <div class="menu-tag love-tag-img">恋愛</div>
+    <div class="menu-tag adult-tag-img">アダルト</div>
+    <div class="menu-tag papakatsu-tag-img">パパ活</div>
+    <div class="menu-tag encounter-tag-img">出会い</div>
+    <div class="menu-tag concafe-tag-img">コンカフェ</div>
+  </div>
+  <hr size="1" color="white" width="70%">
+  <div class="menu-sns-logo">
+    <i class="fa-brands fa-twitter"></i>
+    <p class="menu-sns-text">Twitter</p>
+  </div>
+</nav>
+
+<nav class="search-nav">
+  <input type="text" class="search-input" placeholder="🔎 検索">
+  <p class="search-nav-title">人気タグ</p>
+  <div class="search-tag-area">
+    <p class="search-tag" style="color: red">キス</p>
+    <p class="search-tag" style="color: rebeccapurple">浮気・不倫</p>
+    <p class="search-tag" style="color: red">キス</p>
+    <p class="search-tag" style="color: rebeccapurple">浮気・不倫</p>
+    <p class="search-tag" style="color: red">キス</p>
+    <p class="search-tag" style="color: rebeccapurple">浮気・不倫</p>
+    <p class="search-tag" style="color: rebeccapurple">浮気・不倫</p>
+    <p class="search-tag" style="color: red">キス</p>
+    <p class="search-tag" style="color: rebeccapurple">浮気・不倫</p>
+    <p class="search-tag" style="color: red">キス</p>
+    <p class="search-tag" style="color: rebeccapurple">浮気・不倫</p>
+    <p class="search-tag" style="color: red">キス</p>
+  </div>
+</nav>
+
+<div class="overlay"></div>
 
 <div class="pick-up-area">
   <div class="pick-up-title-area">
@@ -347,11 +385,6 @@
       <hr size="2" color="#FF9345" width="80%" class="separator">
       <hr size="2" color="#FF9345" width="80%" class="separator">
     </div>
-
-
-
-
-
 
     <div class="writer-area">
       <div class="writer-title">
@@ -699,6 +732,71 @@
 </html>
 
 <script>
+  $('.menu-trigger').on('click',function(){
+    if($(this).hasClass('active')){
+      $(this).removeClass('active');
+      $(this).removeClass('fa-xmark');
+      $(this).addClass('fa-bars');
+      $('.menu-nav').removeClass('open');
+      $('.overlay').removeClass('open');
+    } else {
+      $(this).addClass('active');
+      $(this).addClass('fa-xmark');
+      $(this).removeClass('fa-bars');
+      $('.menu-nav').addClass('open');
+      $('.overlay').addClass('open');
+    }
+  });
+
+  $('.overlay').on('click',function(){
+    if($(this).hasClass('open')){
+      $(this).removeClass('open');
+      $('.menu-trigger').removeClass('active');
+      $('.menu-trigger').addClass('fa-bars');
+      $('.menu-trigger').removeClass('fa-xmark');
+      $('.menu-nav').removeClass('open');
+
+      $('.search-trigger').removeClass('active');
+      $('.search-trigger').addClass('fa-magnifying-glass');
+      $('.search-trigger').removeClass('fa-xmark');
+      $('.search-nav').removeClass('open');
+    }
+  });
+
+
+
+
+
+
+
+
+
+
+
+  $('.search-trigger').on('click',function(){
+    if($(this).hasClass('active')){
+      $(this).removeClass('active');
+      $(this).removeClass('fa-xmark');
+      $(this).addClass('fa-magnifying-glass');
+      $('.search-nav').removeClass('open');
+      $('.overlay').removeClass('open');
+    } else {
+      $(this).addClass('active');
+      $(this).addClass('fa-xmark');
+      $(this).removeClass('fa-magnifying-glass');
+      $('.search-nav').addClass('open');
+      $('.overlay').addClass('open');
+    }
+  });
+
+
+
+
+
+
+
+
+
   if (window.matchMedia('(max-width: 768px)').matches) {
     $(".slide-items").slick({
       autoplay: true,

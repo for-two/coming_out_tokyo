@@ -1,4 +1,9 @@
 /*====================================全体====================================*/
+* {
+  box-sizing: border-box;
+  font-family: "MS Pゴシック", sans-serif;
+}
+
 body {
   margin: 0;
   background-color: #101010;
@@ -10,7 +15,21 @@ p {
 }
 
 ul {
+  list-style: none;
+  margin: 0;
   padding: 0;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .more {
@@ -37,6 +56,139 @@ header {
 .menu-icon {
   color: white;
   font-size: 24px;
+}
+
+/*====================================スライドモーダルエリア====================================*/
+.overlay {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.overlay.open {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.menu-trigger, .search-trigger {
+  z-index: 100;
+}
+.menu-trigger.active span, .search-trigger.active span {
+  background-color: #fff;
+}
+
+.menu-nav {
+  display: none;
+  width: 300px;
+  height: 100%;
+  padding-top: 100px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  transform: translate(300px);
+}
+.search-nav {
+  display: none;
+  width: 300px;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transform: translate(300px);
+}
+.menu-nav.open, .search-nav.open {
+  display: block !important;
+  transform: translateZ(0);
+}
+.menu-nav li, .search-nav li {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.menu-nav-title {
+  width: 90%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.search-nav-title {
+  width: 90%;
+  margin: 50px auto 0;
+  font-weight: bold;
+}
+
+.menu-tag-area {
+  width: 80%;
+  margin: 30px auto 50px;
+}
+
+.menu-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.menu-sns-logo {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.menu-sns-logo i {
+  color: black;
+  background-color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.menu-sns-text {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.search-tag-area {
+  width: 80%;
+  margin: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.search-tag {
+  width: 47%;
+  margin: 4px 0;
+  text-align: center;
+  border: 1px solid;
+  padding: 1px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.search-input {
+  width: 70%;
+  margin-left: 25%;
+  margin-top: 35px;
+  background-color: white;
+  display: flex;
+  line-height: 30px;
+  padding: 0 10px 0 5px;
 }
 
 /*====================================ピックアップエリア====================================*/
@@ -96,13 +248,11 @@ header {
   width: fit-content;
   background-color: white;
   color: #FF5454;
-  font-family: 'Noto Sans CJK JP';
   font-weight: bold;
   border-radius: 3px;
 }
 .pick-up-article-text {
   margin: 15px;
-  font-family: 'Noto Sans CJK JP';
   font-weight: bold;
   font-size: 23px;
 }
@@ -125,6 +275,7 @@ header {
 .about-text-contents {
   width: 80%;
   padding: 20px 0 40px;
+  z-index: 10;
 }
 
 .about-logo-description {
@@ -153,11 +304,13 @@ header {
 .about-text-left-line {
   background-color: #FEFF50;
   width:2px;
+  z-index: 10;
 }
 
 .about-text-right-line {
   background-color: #E393FF;
   width:2px;
+  z-index: 10;
 }
 
 /*====================================コンテンツエリア====================================*/
@@ -481,21 +634,25 @@ header {
 }
 
 .prev-page-nate, .next-page-nate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 10px;
   width: 12px;
-  line-height: 10px;
-  padding: 10px;
+  padding: 13px;
   border: 2px solid #FEFF50;
   border-radius: 50%;
   margin: 0 30px;
 }
 
 .page-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 15px;
   height: 12px;
   width: 12px;
-  line-height: 12px;
-  padding: 10px;
+  padding: 13px;
 }
 
 .active-page-number {
@@ -509,7 +666,7 @@ header {
   margin: 50px auto;
 }
 
-.tag{
+.tag {
   display: flex;
   justify-content: center;
   align-items: center;
