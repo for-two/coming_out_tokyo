@@ -96,9 +96,10 @@ header {
   z-index: 10;
   transform: translate(300px);
 }
+
 .search-nav {
   display: none;
-  width: 300px;
+  width: 450px;
   height: 100%;
   background-color: black;
   position: fixed;
@@ -107,10 +108,12 @@ header {
   z-index: 10;
   transform: translate(300px);
 }
+
 .menu-nav.open, .search-nav.open {
   display: block !important;
   transform: translateZ(0);
 }
+
 .menu-nav li, .search-nav li {
   color: #fff;
   text-align: center;
@@ -189,6 +192,7 @@ header {
   display: flex;
   line-height: 30px;
   padding: 0 10px 0 5px;
+  border-radius: 4px;
 }
 
 /*====================================ピックアップエリア====================================*/
