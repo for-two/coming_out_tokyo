@@ -314,7 +314,7 @@ header {
 .about-text-contents {
   width: 80%;
   padding: 20px 0 40px;
-  z-index: 10;
+  z-index: 1;
 }
 
 .about-logo-description {
@@ -347,13 +347,13 @@ header {
 .about-text-left-line {
   background-color: #FEFF50;
   width:2px;
-  z-index: 10;
+  z-index: 1;
 }
 
 .about-text-right-line {
   background-color: #E393FF;
   width:2px;
-  z-index: 10;
+  z-index: 1;
 }
 
 /*====================================コンテンツエリア====================================*/
