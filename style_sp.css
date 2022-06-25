@@ -10,10 +10,22 @@
 
   /*====================================ヘッダー====================================*/
   header {
-    padding-bottom: 12px;
-    border-bottom: 2px solid;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
   }
 
+  .header-contents {
+    padding-bottom: 0;
+  }
+
+  .header-contents img {
+    width: 70%;
+  }
+
+  .header-hr {
+    display: block;
+    margin-top: 10px;
+  }
   /*====================================スライドモーダルエリア====================================*/
   .menu-nav, .search-nav {
     width: 300px;

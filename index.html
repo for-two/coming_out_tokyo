@@ -17,12 +17,18 @@
 <body>
 
 <header>
-  <i class="fa-solid fa-magnifying-glass search-icon search-trigger"></i>
-  <img src="images/logo.png" alt="logo">
-  <i class="fa-solid fa-bars menu-icon menu-trigger"></i>
+  <div class="header-contents">
+    <i class="fa-solid fa-magnifying-glass search-icon search-trigger"></i>
+    <img src="images/logo.png" alt="logo">
+    <i class="fa-solid fa-bars menu-icon menu-trigger"></i>
+  </div>
+  <hr size="2" color="white" width="70%" class="header-hr">
 </header>
 
 <nav class="menu-nav">
+  <div class="menu-close">
+    <i class="fa-solid fa-xmark"></i>
+  </div>
   <p class="menu-nav-title">カテゴリー</p>
   <div class="menu-tag-area">
     <div class="menu-tag love-tag-img">恋愛</div>
@@ -39,7 +45,12 @@
 </nav>
 
 <nav class="search-nav">
-  <input type="text" class="search-input" placeholder="🔎 検索">
+  <div class="search-head">
+    <div class="search-close">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <input type="text" class="search-input" placeholder="🔎 検索">
+  </div>
   <p class="search-nav-title">人気タグ</p>
   <div class="search-tag-area">
     <p class="search-tag" style="color: red">キス</p>
@@ -466,57 +477,163 @@
 
     <div class="genre-articles-area">
       <div class="genre-items">
-        <p class="genre-item active-genre">インタビュー</p>
-        <p class="genre-item">潜入取材</p>
-        <p class="genre-item">インフルエンサー</p>
+        <p class="genre-item active-genre" id="genre-interview">インタビュー</p>
+        <p class="genre-item" id="genre-coverage">潜入取材</p>
+        <p class="genre-item" id="genre-influencer">インフルエンサー</p>
       </div>
 
-      <div class="genre-large">
-        <div class="contents-card">
-          <img src="images/sample.jpg" alt="" class="contents-img large-contents-img">
-          <p class="contents-title">レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
-          <p class="contents-date">2022.5.20</p>
-          <div class="contents-tag-area genre-color">
-            <p class="contents-tag">アダルト系コラム</p>
-            <p class="contents-tag">セックス</p>
-            <p class="contents-tag">取材記事</p>
-            <p class="contents-tag">性の悩み</p>
-            <p class="contents-tag">風俗・デリヘル</p>
+      <div class="genre-contents-wrap genre-interview-wrap">
+        <div class="genre-large">
+          <div class="contents-card">
+            <img src="images/sample.jpg" alt="" class="contents-img large-contents-img">
+            <p class="contents-title">[インタビュー]レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
+            <p class="contents-date">2022.5.20</p>
+            <div class="contents-tag-area genre-color">
+              <p class="contents-tag">アダルト系コラム</p>
+              <p class="contents-tag">セックス</p>
+              <p class="contents-tag">取材記事</p>
+              <p class="contents-tag">性の悩み</p>
+              <p class="contents-tag">風俗・デリヘル</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="genre-small">
+          <div class="contents-card-small">
+            <img src="images/sample.jpg" alt="" class="contents-img small-contents-img">
+            <p class="contents-title">レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
+            <p class="contents-date">2022.5.20</p>
+            <div class="contents-tag-area genre-color">
+              <p class="contents-tag">アダルト系コラム</p>
+            </div>
+          </div>
+          <div class="contents-card-small">
+            <img src="images/sample.jpg" alt="" class="contents-img small-contents-img">
+            <p class="contents-title">レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
+            <p class="contents-date">2022.5.20</p>
+            <div class="contents-tag-area genre-color">
+              <p class="contents-tag">アダルト系コラム</p>
+            </div>
+          </div>
+          <div class="contents-card-small">
+            <img src="images/sample.jpg" alt="" class="contents-img small-contents-img">
+            <p class="contents-title">レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
+            <p class="contents-date">2022.5.20</p>
+            <div class="contents-tag-area genre-color">
+              <p class="contents-tag">アダルト系コラム</p>
+            </div>
+          </div>
+          <div class="contents-card-small">
+            <img src="images/sample.jpg" alt="" class="contents-img small-contents-img">
+            <p class="contents-title">レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
+            <p class="contents-date">2022.5.20</p>
+            <div class="contents-tag-area genre-color">
+              <p class="contents-tag">アダルト系コラム</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="genre-small">
-        <div class="contents-card-small">
-          <img src="images/sample.jpg" alt="" class="contents-img small-contents-img">
-          <p class="contents-title">レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
-          <p class="contents-date">2022.5.20</p>
-          <div class="contents-tag-area genre-color">
-            <p class="contents-tag">アダルト系コラム</p>
+      <div class="genre-contents-wrap genre-coverage-wrap">
+        <div class="genre-large">
+          <div class="contents-card">
+            <img src="images/sample.jpg" alt="" class="contents-img large-contents-img">
+            <p class="contents-title">[潜入取材]レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
+            <p class="contents-date">2022.5.20</p>
+            <div class="contents-tag-area genre-color">
+              <p class="contents-tag">アダルト系コラム</p>
+              <p class="contents-tag">セックス</p>
+              <p class="contents-tag">取材記事</p>
+              <p class="contents-tag">性の悩み</p>
+              <p class="contents-tag">風俗・デリヘル</p>
+            </div>
           </div>
         </div>
-        <div class="contents-card-small">
-          <img src="images/sample.jpg" alt="" class="contents-img small-contents-img">
-          <p class="contents-title">レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
-          <p class="contents-date">2022.5.20</p>
-          <div class="contents-tag-area genre-color">
-            <p class="contents-tag">アダルト系コラム</p>
+
+        <div class="genre-small">
+          <div class="contents-card-small">
+            <img src="images/sample.jpg" alt="" class="contents-img small-contents-img">
+            <p class="contents-title">レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
+            <p class="contents-date">2022.5.20</p>
+            <div class="contents-tag-area genre-color">
+              <p class="contents-tag">アダルト系コラム</p>
+            </div>
+          </div>
+          <div class="contents-card-small">
+            <img src="images/sample.jpg" alt="" class="contents-img small-contents-img">
+            <p class="contents-title">レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
+            <p class="contents-date">2022.5.20</p>
+            <div class="contents-tag-area genre-color">
+              <p class="contents-tag">アダルト系コラム</p>
+            </div>
+          </div>
+          <div class="contents-card-small">
+            <img src="images/sample.jpg" alt="" class="contents-img small-contents-img">
+            <p class="contents-title">レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
+            <p class="contents-date">2022.5.20</p>
+            <div class="contents-tag-area genre-color">
+              <p class="contents-tag">アダルト系コラム</p>
+            </div>
+          </div>
+          <div class="contents-card-small">
+            <img src="images/sample.jpg" alt="" class="contents-img small-contents-img">
+            <p class="contents-title">レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
+            <p class="contents-date">2022.5.20</p>
+            <div class="contents-tag-area genre-color">
+              <p class="contents-tag">アダルト系コラム</p>
+            </div>
           </div>
         </div>
-        <div class="contents-card-small">
-          <img src="images/sample.jpg" alt="" class="contents-img small-contents-img">
-          <p class="contents-title">レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
-          <p class="contents-date">2022.5.20</p>
-          <div class="contents-tag-area genre-color">
-            <p class="contents-tag">アダルト系コラム</p>
+      </div>
+
+      <div class="genre-contents-wrap genre-influencer-wrap">
+        <div class="genre-large">
+          <div class="contents-card">
+            <img src="images/sample.jpg" alt="" class="contents-img large-contents-img">
+            <p class="contents-title">[インフルエンサー]レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
+            <p class="contents-date">2022.5.20</p>
+            <div class="contents-tag-area genre-color">
+              <p class="contents-tag">アダルト系コラム</p>
+              <p class="contents-tag">セックス</p>
+              <p class="contents-tag">取材記事</p>
+              <p class="contents-tag">性の悩み</p>
+              <p class="contents-tag">風俗・デリヘル</p>
+            </div>
           </div>
         </div>
-        <div class="contents-card-small">
-          <img src="images/sample.jpg" alt="" class="contents-img small-contents-img">
-          <p class="contents-title">レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
-          <p class="contents-date">2022.5.20</p>
-          <div class="contents-tag-area genre-color">
-            <p class="contents-tag">アダルト系コラム</p>
+
+        <div class="genre-small">
+          <div class="contents-card-small">
+            <img src="images/sample.jpg" alt="" class="contents-img small-contents-img">
+            <p class="contents-title">レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
+            <p class="contents-date">2022.5.20</p>
+            <div class="contents-tag-area genre-color">
+              <p class="contents-tag">アダルト系コラム</p>
+            </div>
+          </div>
+          <div class="contents-card-small">
+            <img src="images/sample.jpg" alt="" class="contents-img small-contents-img">
+            <p class="contents-title">レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
+            <p class="contents-date">2022.5.20</p>
+            <div class="contents-tag-area genre-color">
+              <p class="contents-tag">アダルト系コラム</p>
+            </div>
+          </div>
+          <div class="contents-card-small">
+            <img src="images/sample.jpg" alt="" class="contents-img small-contents-img">
+            <p class="contents-title">レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
+            <p class="contents-date">2022.5.20</p>
+            <div class="contents-tag-area genre-color">
+              <p class="contents-tag">アダルト系コラム</p>
+            </div>
+          </div>
+          <div class="contents-card-small">
+            <img src="images/sample.jpg" alt="" class="contents-img small-contents-img">
+            <p class="contents-title">レズ風俗に行ってみた！可愛い女の子と初めてのレズプレイをしてみた結果・・・</p>
+            <p class="contents-date">2022.5.20</p>
+            <div class="contents-tag-area genre-color">
+              <p class="contents-tag">アダルト系コラム</p>
+            </div>
           </div>
         </div>
       </div>
@@ -705,7 +822,7 @@
         <p class="footer-twitter-text">Twitter</p>
       </div>
       <div class="footer-logo">
-        <img src="images/logo.png" alt="logo">
+        <img src="images/logo_w_txt.png" alt="logo">
       </div>
     </div>
 
@@ -717,14 +834,14 @@
 
   <div class="footer-site-map-sp">
     <div class="footer-logo">
-      <img src="images/logo.png" alt="logo">
+      <img src="images/logo_w_txt.png" alt="logo">
     </div>
     <div class="footer-twitter">
       <i class="fa-brands fa-twitter"></i>
       <p class="footer-twitter-text">Twitter</p>
     </div>
     <p class="site-info-text">運営者情報</p>
-    <p class="site-info-text">広告掲載について</p>
+    <p class="site-info-text">広告掲載に関して</p>
   </div>
   <p class="copyright">Copyright©︎ ComingOut.Tokyo All Rights Reserved.</p>
 </footer>
@@ -732,17 +849,26 @@
 </html>
 
 <script>
+  $(function() {
+    $(".slide-items").find('.slick-dots').prepend('<p class="dots-prev">＜</p>')
+    $(".slide-items").find('.slick-dots').append('<p class="dots-next">＞</p>')
+
+    $('.dots-prev').on('click', function () {
+      $(".slide-items").slick('slickPrev');
+    })
+
+    $('.dots-next').on('click', function () {
+      $(".slide-items").slick('slickNext');
+    })
+  })
+
   $('.menu-trigger').on('click',function(){
     if($(this).hasClass('active')){
       $(this).removeClass('active');
-      $(this).removeClass('fa-xmark');
-      $(this).addClass('fa-bars');
       $('.menu-nav').removeClass('open');
       $('.overlay').removeClass('open');
     } else {
       $(this).addClass('active');
-      $(this).addClass('fa-xmark');
-      $(this).removeClass('fa-bars');
       $('.menu-nav').addClass('open');
       $('.overlay').addClass('open');
     }
@@ -752,13 +878,9 @@
     if($(this).hasClass('open')){
       $(this).removeClass('open');
       $('.menu-trigger').removeClass('active');
-      $('.menu-trigger').addClass('fa-bars');
-      $('.menu-trigger').removeClass('fa-xmark');
       $('.menu-nav').removeClass('open');
 
       $('.search-trigger').removeClass('active');
-      $('.search-trigger').addClass('fa-magnifying-glass');
-      $('.search-trigger').removeClass('fa-xmark');
       $('.search-nav').removeClass('open');
     }
   });
@@ -766,18 +888,26 @@
   $('.search-trigger').on('click',function(){
     if($(this).hasClass('active')){
       $(this).removeClass('active');
-      $(this).removeClass('fa-xmark');
-      $(this).addClass('fa-magnifying-glass');
       $('.search-nav').removeClass('open');
       $('.overlay').removeClass('open');
     } else {
       $(this).addClass('active');
-      $(this).addClass('fa-xmark');
-      $(this).removeClass('fa-magnifying-glass');
       $('.search-nav').addClass('open');
       $('.overlay').addClass('open');
     }
   });
+
+  $('.menu-close').on('click',function(){
+    $('.menu-trigger').removeClass('active');
+    $('.menu-nav').removeClass('open');
+    $('.overlay').removeClass('open');
+  })
+
+  $('.search-close').on('click',function(){
+    $('.search-trigger').removeClass('active');
+    $('.search-nav').removeClass('open');
+    $('.overlay').removeClass('open');
+  })
 
   if (window.matchMedia('(max-width: 768px)').matches) {
     $(".slide-items").slick({
@@ -786,7 +916,8 @@
       centerMode: true,
       centerPadding: "10%",
       arrows: false,
-      dots: true
+      dots: true,
+      zIndex: 1,
     });
 
     $(".slide-writers").slick({
@@ -804,7 +935,8 @@
       centerMode: true,
       centerPadding: "20%",
       arrows: false,
-      dots: true
+      dots: true,
+      zIndex: 1,
     });
 
     $(".slide-writers").slick({
@@ -816,6 +948,26 @@
       dots: true
     });
   }
+
+  $('.genre-item').on('click', function () {
+    $('.genre-item').removeClass('active-genre')
+    $(this).addClass('active-genre')
+  })
+
+  $('#genre-interview').on('click', function () {
+    $('.genre-contents-wrap').hide()
+    $('.genre-interview-wrap').show()
+  })
+
+  $('#genre-coverage').on('click', function () {
+    $('.genre-contents-wrap').hide()
+    $('.genre-coverage-wrap').show()
+  })
+
+  $('#genre-influencer').on('click', function () {
+    $('.genre-contents-wrap').hide()
+    $('.genre-influencer-wrap').show()
+  })
 </script>
 
 <style>
@@ -859,5 +1011,27 @@
     color: white;
     opacity: 1;
     background: white;
+  }
+
+  .dots-prev {
+    display: inline;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid;
+    padding: 12px;
+    border-radius: 45%;
+    color: #FEFF50;
+    margin-right: 60px;
+  }
+
+  .dots-next {
+    display: inline;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid;
+    padding: 12px;
+    border-radius: 45%;
+    color: #FEFF50;
+    margin-left: 60px;
   }
 </style>
